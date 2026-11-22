@@ -1,0 +1,17 @@
+{
+  "name": "potato-rooms",
+  "version": "1.0.0",
+  "description": "Self-hosted live Hot Potato for three to eight.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/flow.js && node test/roomcode.js && node test/plus.js && node test/moderation.js && TEST_PORT3=5742 node test/reactions.js && node test/voice.js && node test/friendsplayed.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "socket.io": "^4.8.3"
+  },
+  "devDependencies": {
+    "socket.io-client": "^4.8.3"
+  }
+}
